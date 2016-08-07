@@ -1,3 +1,5 @@
+Fork of zopanix factorio server. Added compose file and pulled configuration out of Dockerfile
+
 Factorio
 ===== 
 Factorio Server in docker
@@ -6,7 +8,7 @@ Factorio Server in docker
 
 Current Version
 -----
-0.13.13
+0.13.15
 ### What's new ?
 #### Factorio
 See [factorio's site](http://www.factorio.com)
