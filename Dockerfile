@@ -15,9 +15,9 @@ EXPOSE 34197/udp
 EXPOSE 27015/tcp
 
 RUN apk --update add bash curl && \
-    curl -sSL --cacert /opt/factorio.crt https://www.factorio.com/get-download/$VERSION/headless/linux64 -o /tmp/factorio_headless_x64_$VERSION.tar.gz && \
-    tar xzf /tmp/factorio_headless_x64_$VERSION.tar.gz && \
-    rm /tmp/factorio_headless_x64_$VERSION.tar.gz && \
+    curl -sSL --cacert /opt/factorio.crt https://www.factorio.com/get-download/$VERSION/headless/linux64 -o /tmp/factorio.tar.gz && \
+    tar xzf /tmp/factorio.tar.gz && \
+    rm /tmp/factorio.tar.gz && \
     apk del curl
 
 CMD ["./launch.sh"]
